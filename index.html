@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Financial Consultancy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Financial Consultancy Services</h1>
+    <p>Your trusted partner in financial growth</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-item">
+            <h3>Investment Advisory</h3>
+            <p>We provide expert advice on investment strategies tailored to your specific financial goals and risk appetite.</p>
+        </div>
+        <div class="service-item">
+            <h3>Financial Planning</h3>
+            <p>Our financial planning services help you secure your financial future by providing structured, customized plans for savings, retirement, and more.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tax Consulting</h3>
+            <p>Maximize your tax savings and ensure you are in compliance with all tax regulations with our professional tax advisory services.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of certified financial experts with over 10 years of experience in the field of financial advisory. Our mission is to help individuals and businesses make informed financial decisions, ensuring their long-term financial well-being. We believe in building long-lasting relationships with our clients based on trust, transparency, and proven results.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need personalized financial advice, feel free to reach out. We are here to help you!</p>
+    <p>Phone: <strong>7017283687</strong></p>
+    <p>Email: <strong><a href="mailto:zaheerarshaddeobandi@gmail.com">zaheerarshaddeobandi@gmail.com</a></strong></p>
+    <form class="contact-form" action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Financial Consultancy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
